@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte Médico - Doctor</title>
+
+    <link rel="icon" href="../Imagenes/logo1.png">
+
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/doctor.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+        <img src="../Imagenes/logo1.png" class="perfil-img">
+        <h2 id="doctorNombre">Cargando...</h2>
+        <p id="doctorTipo" class="tipo"></p>
+
+        <nav>
+            <a href="dashboard_doctor.html">Inicio</a>
+            <a href="citas.html">Citas</a>
+            <a href="pacientes_asignados.html">Pacientes asignados</a>
+            <a class="active" href="reporte_medico.html">Reporte médico</a>
+            <a href="emergencia.html">Alarma de emergencia</a>
+            <a href="chat_paciente.html">Chat con pacientes</a>
+            <a href="../login.html" class="cerrar btn-danger">Cerrar sesión</a>
+        </nav>
+    </aside>
+
+    <main class="contenido">
+        <h1>Registrar reporte médico</h1>
+
+        <form class="formulario" id="formReporte">
+
+            <label>Paciente</label>
+            <select id="selectPacientes"></select>
+
+            <label>Diagnóstico</label>
+            <textarea id="diag"></textarea>
+
+            <label>Observaciones</label>
+            <textarea id="obs"></textarea>
+
+            <label>Recomendaciones</label>
+            <textarea id="rec"></textarea>
+
+            <button type="submit" class="btn btn-primary">Guardar reporte</button>
+        </form>
+    </main>
+
+    <script src="../js/doctor.js"></script>
+</body>
+</html>

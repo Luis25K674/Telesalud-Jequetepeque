@@ -1,0 +1,41 @@
+/* ==========================================================
+   BASE GENERAL DEL PROYECTO
+   ========================================================== */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tipografía global */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7ff;
+    color: #222;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Imágenes responsables */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Titulos generales */
+h1, h2, h3 {
+    color: #1b3fa5;
+}
+
+/* Contenedor global */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}

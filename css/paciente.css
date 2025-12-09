@@ -1,0 +1,202 @@
+/* ==========================================================
+   ESTILOS GENERALES
+   ========================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #eef3ff;
+    display: flex;
+}
+
+/* ==========================================================
+   SIDEBAR DEL PACIENTE
+   ========================================================== */
+.sidebar {
+    width: 240px;
+    height: 100vh;
+    background: #1b3fa5;
+    padding: 25px 15px;
+    color: white;
+    position: fixed;
+}
+
+.sidebar .perfil-img {
+    width: 70px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.sidebar h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.sidebar .tipo {
+    font-size: 14px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.sidebar nav a {
+    display: block;
+    padding: 10px;
+    margin-bottom: 8px;
+    text-decoration: none;
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+    background: white;
+    color: #1b3fa5;
+}
+
+.sidebar nav a.cerrar {
+    background: #ff4d4d;
+    color: white;
+}
+
+.sidebar nav a.cerrar:hover {
+    background: #cc2f2f;
+}
+
+/* ==========================================================
+   CONTENIDO PRINCIPAL
+   ========================================================== */
+.contenido {
+    margin-left: 260px;
+    padding: 30px;
+    width: calc(100% - 260px);
+}
+
+.contenido h1 {
+    color: #1b3fa5;
+    margin-bottom: 15px;
+}
+
+/* ==========================================================
+   INFORMACIÓN
+   ========================================================== */
+.info-box {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    width: 350px;
+}
+
+.info-box p {
+    margin: 6px 0;
+}
+
+/* ==========================================================
+   LISTAS (DOCTORES, PACIENTES…)
+   ========================================================== */
+.lista {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.item {
+    background: white;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.item h3 {
+    color: #1b3fa5;
+}
+
+/* ==========================================================
+   TABLAS
+   ========================================================== */
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabla th {
+    background: #1b3fa5;
+    color: white;
+    padding: 10px;
+}
+
+.tabla td {
+    background: white;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* ==========================================================
+   CHAT PACIENTE
+   ========================================================== */
+.chat-box {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.mensajes {
+    height: 350px;
+    overflow-y: auto;
+    padding-right: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.msg {
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    width: fit-content;
+    max-width: 70%;
+}
+
+.msg.paciente {
+    background: #dce6ff;
+    align-self: flex-start;
+}
+
+.msg.doctor {
+    background: #ffefcc;
+    align-self: flex-end;
+}
+
+.enviar {
+    display: flex;
+    margin-top: 10px;
+}
+
+.enviar input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #9bb2ff;
+}
+
+.enviar button {
+    padding: 12px 20px;
+    border: none;
+    background: #1b3fa5;
+    color: white;
+    margin-left: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.enviar button:hover {
+    background: #0f2972;
+}

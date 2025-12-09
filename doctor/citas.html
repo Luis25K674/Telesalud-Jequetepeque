@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citas - Doctor</title>
+
+    <link rel="icon" href="../Imagenes/logo1.png">
+
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/doctor.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+        <img src="../Imagenes/logo1.png" class="perfil-img">
+        <h2 id="doctorNombre">Cargando...</h2>
+        <p id="doctorTipo" class="tipo"></p>
+
+        <nav>
+            <a href="dashboard_doctor.html">Inicio</a>
+            <a class="active" href="citas.html">Citas</a>
+            <a href="pacientes_asignados.html">Pacientes asignados</a>
+            <a href="reporte_medico.html">Reporte médico</a>
+            <a href="emergencia.html">Alarma de emergencia</a>
+            <a href="chat_paciente.html">Chat con pacientes</a>
+            <a href="../login.html" class="cerrar btn-danger">Cerrar sesión</a>
+        </nav>
+    </aside>
+
+    <main class="contenido">
+        <h1>Citas programadas</h1>
+
+        <table class="tabla" id="tablaCitas">
+            <tr>
+                <th>Fecha</th>
+                <th>Hora</th>
+                <th>Paciente</th>
+                <th>Estado</th>
+            </tr>
+        </table>
+    </main>
+
+    <script src="../js/doctor.js"></script>
+</body>
+</html>

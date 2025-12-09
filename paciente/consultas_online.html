@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultas Online - Paciente</title>
+
+    <link rel="icon" href="../Imagenes/logo1.png">
+
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/paciente.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+        <img src="../Imagenes/logo1.png" class="perfil-img">
+        <h2 id="pacienteNombre">Cargando...</h2>
+        <p id="pacienteTipo" class="tipo"></p>
+
+        <nav>
+            <a href="dashboard_paciente.html">Inicio</a>
+            <a href="informacion.html">Información</a>
+            <a href="reservar_citas.html">Reservar citas</a>
+            <a href="historial_medico.html">Historial médico</a>
+            <a class="active" href="consultas_online.html">Consultas online</a>
+            <a href="../login.html" class="cerrar btn-danger">Cerrar sesión</a>
+        </nav>
+    </aside>
+
+    <main class="contenido">
+        <h1>Chat con doctor</h1>
+
+        <div class="chat-box">
+            <div class="mensajes" id="chatMensajes"></div>
+
+            <div class="enviar">
+                <input id="inputMensaje" type="text" placeholder="Escribe tu mensaje...">
+                <button id="btnEnviar" class="btn btn-primary">Enviar</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/paciente.js"></script>
+</body>
+</html>

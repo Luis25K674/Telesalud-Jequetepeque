@@ -1,0 +1,61 @@
+/* ==========================================================
+   LAYOUT – ESTRUCTURA GENERAL DEL PROYECTO
+   ========================================================== */
+
+/* HEADER GENERAL */
+.header {
+    background: #ffffff;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header .logo img {
+    width: 40px;
+}
+
+.header nav a {
+    margin-left: 20px;
+    font-weight: bold;
+    color: #1b3fa5;
+}
+
+/* FOOTER GENERAL */
+footer {
+    background: #1b3fa5;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+/* SECCIONES GENÉRICAS */
+.section {
+    padding: 40px 20px;
+}
+
+/* GRID GENERAL */
+.grid {
+    display: grid;
+    gap: 20px;
+}
+
+.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresar - Telesalud</title>
+
+    <link rel="icon" href="Imagenes/logo1.png">
+
+    <!-- CSS BASE -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+
+    <!-- CSS ESPECÍFICO -->
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+
+    <div class="login-container">
+        <img src="Imagenes/logo1.png" class="login-logo">
+
+        <h2>Ingresar</h2>
+
+        <form id="loginForm">
+
+            <label>Correo electrónico</label>
+            <input id="loginCorreo" type="email" required>
+
+            <label>Contraseña</label>
+            <input id="loginContrasena" type="password" required>
+
+            <a href="#" class="forget">¿Olvidaste tu contraseña?</a>
+
+            <button class="btn btn-primary" type="submit">Ingresar</button>
+        </form>
+
+        <p class="registro-text">
+            ¿No tienes cuenta?
+            <a href="register.html">Regístrate aquí</a>
+        </p>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
